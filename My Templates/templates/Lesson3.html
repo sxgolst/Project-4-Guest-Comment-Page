@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/stylesheets/lesson.css">
+
+	<title>Session</title>
+	<meta charset="utf-8">
+</head>
+<body>  
+<h1>Lesson 3 Notes From This Sessiion</h1>
+<div class="session">
+
+  <h2>OBJECT ORIENTED PROGRAMMING - OOP</h2>
+  <div class="question">
+    <div class="question-title">What is a <b>OOP</b>?
+     </div>
+     <div class="answer">
+      <p>OOP - is Object Oriented Programming such as Python, Java and many others.  OOP is organized around objects and data rather than 
+actions and logic.  It is split into self contained objects. It is almost like having many several mini programs.  Each object is
+represented in a different part of the application, and each object contains it own data and logic.  They communicate between themselves.
+It allows the programmer to think about the program easier.  OOP is an idea supported in many languages.
+      </p>            
+    </div>
+  </div> 
+  <div class="question">
+    <div class="question-title"> Why is OOP Valuable Tool for Thinking About Large Programming Projects?  
+    </div>
+    <div class="answer">
+        <p>
+           OOP is valuable because it allows for programmers to use existing (even other people's) code from one program to another program. 
+This should save time and costs by using existing code where as duplication is limited.
+        </p>      
+    </div>
+  </div>
+  <div class="question">
+    <div class="question-title">What's the difference between <b>CLASS</b> and <b>OBJECT</b>
+  </div>
+  <div class="answer">
+   <p>
+CLASS - is the blueprint, the definition, the description
+it describes what something is, but isn't the thing itself, it is a well defined idea.
+Classes describes 2 things attributes and behavior.  The attributes are the data, and the behavior is the funcitons (what can you do).
+Also known as properties and methods.  It is described in abstract... Classes are self contained units, but represents both data
+and code that works on the data.
+<br><br>
+OBJECT - The object is created from the class.  Once class can create multiple objects
+                  
+    </p>
+   </div>
+  </div>
+  <div class="question">
+    <div class="question-title">New Vocabulary Words 
+    </div>
+    <div class="answer">
+            
+            <ul>
+              <li><b>Instance Variables</b> - are defined inside a method, and they are local to that instance - which is an object
+all of the variables associated with a specify instance unique to an object... access by using self inside the class, and
+instance name outside the class</li>
+	              <li><b>Constructor</b>- uses the keyword "self"</li>
+	              <li><b>Self</b>- itself or instance in question</li>
+                      <li><b>Instance Methods</b>- a function that is defined inside a class and associated with an instance
+</li>
+                      <li><b>Inheritance</b>- is when an object or class is based on another object or class, using the same implementation to maintain the same behavior</li>
+                      <li><b>Method</b>- is a function inside of an object, you can pass attributes (variable inside a method) to the class and method that
+will get processed inside of the method and independently for each object.</li>
+                      <li><b>Module</b>- is a way to map one thing to another, is a phython file with some functions or variables, you can import that file, and
+you can access the functions or variables in that modue with the . (dot) operator.
+</li>
+                      <li><b>Library</b>- is the reference describes the exact syntax and semantics, also can describe some of the optional components that are included.</li>
+            </ul>
+    </div>
+   </div>
+  <div class="question">
+    <div class="question-title"> What is <b>Method Oeverriding</b>
+    </div>
+     <div class="answer">
+      <p>
+            Allows a child class to provide a specific implementation of a method that is already provided by a parent classes. The implementation
+in the child class overrides the implementaton in parent class by providing a method that has the same name. 
+class Parent():
+ <p class="tab">def __init__(self, last_name, eye_color):</p>
+   <p class="tab2">print("Parent Constructor Called")</p>
+   <p class="tab2">self.last_name = last_name</p>
+   <p class="tab2">self.eye_color = eye_color</p>  
+class Child(Parent):
+ <p class="tab">def __init__(self, last_name, eye_color, number_of_toys):</p>
+   <p class="tab2">print("Child Constructor Called")</p>
+   <p class="tab2">Parent.__init__(self, last_name, eye_color)</p>
+   <p class="tab2">self.number_of_toys = number_of_toys</p>
+     </div>
+   </div>
+  </div>
+ </body>  
+  </html>  
+
+  {% endblock %}
