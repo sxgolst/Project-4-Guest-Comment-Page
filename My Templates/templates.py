@@ -78,10 +78,6 @@ class GuestHandler(webapp2.RequestHandler):
                 self.render("Lesson4.html")
         else:
             self.render("dropdown.html")
-                   
-
-    def escape_html(s):
-        return cgi.escape(s, quote = True)
             
 
     def post(self):
@@ -95,8 +91,8 @@ class GuestHandler(webapp2.RequestHandler):
         else:
             contact.put()
             self.redirect("/thanks")
-            time.sleep = time.sleep
-            time.sleep(5)
+            length_of_delay = 5 # seconds
+            time.sleep(length_of_delay)
              
 
 class ThanksHandler(GuestHandler):
