@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Intro to Programming Notes - Stanley Golston</title>
+		<br> 
+		<h3>Please post comments along with your user information!</h3>
+		<link rel="stylesheet" href="/stylesheets/lesson.css">
+	</head>
+	 
+
+	<body style="margin: 0">
+		<h1 style="background-color: #ddd; color: #888; margin: 0 height: 50px">Intro to Programming Notes - Stanley Golston
+		</h1>	
+	<!-- <span class="error">%s</span> 
+	 html=""" -->
+        <form method="post" action="/guest">
+        <h2>User Information and Comments</h2>
+        <label>
+        	Name
+        	<input type="text" name="name">
+        </label>
+        <label>
+        	Email
+        	<input type="text" name="email">
+        </label>	
+        <br>
+        <br>
+    	<label>
+    		Comments
+    		<div><textarea name="content" rows="3" cols="60"></textarea></div>
+    	</label>
+    	<label>	
+    		<input type="submit" value="Post Comments">
+            <br>
+            <br>
+            <a href="/guest">Go Back to Dropdown</a>
+    	</label>	
+        </form>
+        
+	 		  
+		{% block content %}
+		{% endblock %}
+
+	</body>
+
+	<footer>
+
+	</footer>
+
+</html>		
