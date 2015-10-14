@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/stylesheets/lesson.css">
+
+	<title>Session</title>
+	<meta charset="utf-8">
+</head>
+<body>  
+<h1>Lesson 2 Notes From This Session</h1>
+<div class="session">
+
+  <h2>Lesson 2: Variables and Strings</h2>
+  <div class="question">
+    <div class="question-title">What is a <b>variable</b> in Python?
+     </div>
+     <div class="answer">
+      <p>Python Variable - Are used to store things like numbers, strings
+      </p>            
+    </div>
+  </div> 
+  <div class="question">
+    <div class="question-title"> What does it mean to <b>assign</b> a value to a variable?  How do you do it?
+    </div>
+    <div class="answer">
+        <p>
+                  Assign a value to a variable  name = expression
+                  whatever is on the left side of the equal sign gets the contents on the right side of the equal sign.  
+		  For example:  name = 'Udacity' and now that name is declared, if you issue in python print name, the result will be Udacity
+        </p>      
+    </div>
+  </div>
+  <div class="question">
+    <div class="question-title">What's the difference between what the equals <span class="code">sign = means</span> in <span class="code"> 2 + 3 = 5</span> and <span class="code">my_variable = 5 ?</span>
+  </div>
+  <div class="answer">
+   <p>
+
+                  The equal sign means an assignment like <span class="code"> my_variables = 5</span>  (5 take the place of <span class="code">my_variable</span>, sine it was declared)
+
+                  Whereas <span class="code">2 + 3 = 5</span> is the mathematical equation
+    </p>
+   </div>
+  </div>
+  <div class="question">
+    <div class="question-title"> What are some ways that variables are useful?
+    </div>
+    <div class="answer">
+            
+            <ul>
+              <li>Allows for changing the value</li>
+	              <li>Give away to store values</li>
+	              <li>Allows humans to be able to read</li>
+            </ul>
+    </div>
+   </div>
+  <div class="question">
+    <div class="question-title"> What is the difference between <span class="code">2 + 2 and "2" + "2"</span>?
+    </div>
+     <div class="answer">
+      <p>
+               In Python <span class="code">2 + 2</span> is a number equation, while '2'+'2' is printed literally as 22 as a string
+      </p>
+     </div>
+   </div>
+   <div class="question">
+    <div class="question-title">What is a function ("Procedure")?
+    </div>
+    <div class="answer">
+      <p>A function takes input, processes it and the outputs. Are the mapping of inputs and outputs!
+      </p>            
+    </div>
+  </div> 
+    <div class="question">
+    <div class="question-title"> What is the difference between making and using a function?
+    </div>
+    <div class="answer">
+        <p>Functions starts with the line with the keyword <b>def</b> followed by the name of the function followed by the values in parentheses.</p>      
+    </div>
+  </div>
+   <div class="question">
+    <div class="question-title">How do functions help programmers avoid repetition?
+  </div>
+  <div class="answer">
+   <p>Functions can be reused over and over again once they have been defined.
+    </p>
+   </div>
+  </div>
+  </div>
+ </body>  
+  </html>  
+
+  {% endblock %}
